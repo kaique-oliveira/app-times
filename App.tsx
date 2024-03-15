@@ -1,5 +1,5 @@
-import { Groups } from "@screens/Groups";
-import theme from "@theme/index";
+import { Players } from "@screens/Players";
+import theme from "./src/theme";
 import { ThemeProvider } from "styled-components";
 import {
   useFonts,
@@ -20,7 +20,7 @@ export default function App() {
         translucent
       />
 
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
