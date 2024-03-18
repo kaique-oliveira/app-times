@@ -1,4 +1,3 @@
-import { Players } from "@screens/Players";
 import theme from "./src/theme";
 import { ThemeProvider } from "styled-components";
 import {
@@ -8,6 +7,7 @@ import {
 } from "@expo-google-fonts/inter";
 import { Loading } from "@components/Loading";
 import { StatusBar } from "react-native";
+import { Routes } from "@routes/index";
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Inter_400Regular, Inter_700Bold });
@@ -20,7 +20,7 @@ export default function App() {
         translucent
       />
 
-      {fontsLoaded ? <Players /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }
