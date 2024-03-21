@@ -23,6 +23,10 @@ export function Players() {
   const { params } = useRoute();
   const { group } = params as RouteParams;
 
+  // async function (){
+
+  // }
+
   return (
     <Container>
       <Header showBackButton />
